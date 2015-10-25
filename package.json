@@ -1,0 +1,22 @@
+{
+  "name": "angular-interview",
+  "version": "0.0.0",
+  "description": "angular interview question",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/collectivecognition/angular-interview.git"
+  },
+  "author": "Will Blanchette",
+  "bugs": {
+    "url": "https://github.com/collectivecognition/angular-interview/issues"
+  },
+  "homepage": "https://github.com/collectivecognition/angular-interview",
+  "dependencies": {
+    "express": "^4.13.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {}
+}

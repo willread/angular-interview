@@ -1,0 +1,18 @@
+<div ng-controller="PeopleSearchController">
+  <form ng-submit='search()'>
+    <input ng-model='term'>
+    <button>Search</button>
+  </form>
+  <table ng-if="people.length">
+    <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat='person in people'>
+        <td>{{person.name}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
