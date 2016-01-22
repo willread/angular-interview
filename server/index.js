@@ -33,8 +33,10 @@ var people = [
 ];
 
 app.get('/people', function(req, res){
+  var term = req.query.term || '';
+
   var results = _.filter(people, function(person) {
-    return person.name.toLowerCase().indexOf(req.query.term.toLowerCase()) > -1;
+    return person.name.toLowerCase().indexOf(term.toLowerCase()) > -1;
   });
 
   if(results.length){
