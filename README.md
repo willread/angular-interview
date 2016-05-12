@@ -1,3 +1,18 @@
+Setup
+=====
+
+1) Clone the respository
+
+`git clone git@github.com:collectivecognition/angular-interview.git && cd angular-interview`
+
+2) Install dependencies
+
+`npm install`
+
+3) Start the development server
+
+`npm start`
+
 Tasks
 =====
 
@@ -10,10 +25,10 @@ Tasks
 API Docs
 ========
 
-GET /people?term=<string:term>
+GET /people?term=:string
 ------------------------------
 
-Returns a list of people, either the entire list, or a subset
+Returns a list of people, either the entire list or a subset
 filtered by a search term.
 
 Examples:
@@ -39,7 +54,7 @@ GET /people?term=Thompson
   ```
 
 GET /people?term=Adams
-  
+
   ```
   HTTP/1.1 404 Not Found
   Content-Type: application/json

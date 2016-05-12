@@ -1,6 +1,6 @@
 angular.module('app', [])
 
-.controller('PeopleSearchController', function($scope, peopleService) {
+.controller('PeopleSearchController', function PeopleSearchController($scope, peopleService) {
   $scope.search = function() {
     peopleService.search().then(function(people) {
       $scope.people = people;
@@ -8,7 +8,7 @@ angular.module('app', [])
   };
 })
 
-.service('peopleService', function($q, $http) {
+.service('peopleService', function peopleService($q, $http) {
   var service = this;
 
   service.search = function(term) {
